@@ -25,17 +25,18 @@ p {
 .hiding-spot {
     display: flex;
     flex-direction: column;
-}
-
-img {
-    height: 150px;
-    transition: transform 0.5s ease-in-out;
-    z-index: 20;
+    align-items: center;
 }
 
 .chainsaw {
-    height: 100px;
-    z-index: 10;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 400px;
+}
+
+.stats {
+    margin-top: 50px;
 }
 
 .stat {

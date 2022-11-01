@@ -20,9 +20,32 @@ let total = 0;
 /* Events */
 button1.addEventListener('click', () => {
     total++;
-     const 
+    resetSaw();
+
+    const sawLocation = Math.ceil(Math.random() * 3);
+    console.log('sawLocation', sawLocation);
+
+    if (sawLocation === 1) {
+        wins++;
+        img1.classList.add('reveal');
+    } else if (sawLocation === 2) {
+        img2.classList.add('reveal');
+    } else {
+        img3.classList.add('reveal');
+    }
+    displayResults();
 });
 
 /* Display Functions */
+function resetSaw() {
+    img1.classList.remove('reveal');
+    img2.classList.remove('reveal');
+    img3.classList.remove('reveal');
+}
 
+function displayResults() {
+    winsEL.textContent = wins;
+    lossesEL.textContent = total - wins;
+    totalEL.textContent = total;
+}
 // (don't forget to call any display functions you want to run on page load!)
