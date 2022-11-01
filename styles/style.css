@@ -1,0 +1,39 @@
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: src= '/assets/zombie.jpeg';
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hiding-spots {
+    display: flex;
+    gap: 50px;
+}
+
+.hiding-spot {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 150px;
+    transition: transform 0.5s ease-in-out;
+    z-index: 20;
+}
+
+.chainsaw {
+    height: 100px;
+    z-index: 10;
+}
