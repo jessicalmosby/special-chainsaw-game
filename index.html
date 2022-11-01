@@ -35,20 +35,25 @@
             <p>Can you find where the weapon is hiding?</p>
             <section class="hiding-spots">
                 <div class="hiding-spot">
-                    <img src="/assets/3611309.png" />
-                    <button>Treehouse</button>
+                    <img id="img1" src="/assets/3611309.png" />
+                    <button id="button1">Treehouse</button>
                 </div>
                 <div class="hiding-spot">
-                    <img src="/assets/shed.png" />
-                    <button>Shed</button>
+                    <img id="img2" src="/assets/shed.png" />
+                    <button id="button2">Shed</button>
                 </div>
                 <div class="hiding-spot">
-                    <img src="/assets/bush.png" />
-                    <button>Bush on fire, maybe?</button>
+                    <img id="img3" src="/assets/bush.png" />
+                    <button id="button3">Bush on fire, maybe?</button>
                 </div>
                 <div>
-                    <img class="chainsaw" src="/assets/chainsaw.png" />
+                    <img id="img4" class="chainsaw" src="/assets/chainsaw.png" />
                 </div>
+            </section>
+            <section class="stats">
+                <div class="stat">Zombie kills:<span id="wins"></span></div>
+                <div class="stat">Eaten alive:<span id="losses"></span></div>
+                <div class="stat">Total:<span id="total"></span></div>
             </section>
         </main>
     </body>
