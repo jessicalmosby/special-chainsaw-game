@@ -5,9 +5,9 @@ const button1 = document.getElementById('button1');
 const button2 = document.getElementById('button2');
 const button3 = document.getElementById('button3');
 
-const img1 = document.getElementById('#img2');
-const img2 = document.getElementById('#img2');
-const img3 = document.getElementById('#img3');
+const img1 = document.getElementById('img1');
+const img2 = document.getElementById('img2');
+const img3 = document.getElementById('img3');
 
 const winsEL = document.getElementById('wins');
 const lossesEL = document.getElementById('losses');
@@ -31,6 +31,42 @@ button1.addEventListener('click', () => {
     } else if (sawLocation === 2) {
         img2.classList.add('reveal');
     } else {
+        img3.classList.add('reveal');
+    }
+    displayResults();
+});
+
+button2.addEventListener('click', () => {
+    total++;
+    resetSaw();
+
+    const sawLocation = Math.ceil(Math.random() * 3);
+    console.log('sawLocation', sawLocation);
+
+    if (sawLocation === 1) {
+        img1.classList.add('reveal');
+    } else if (sawLocation === 2) {
+        wins++;
+        img2.classList.add('reveal');
+    } else {
+        img3.classList.add('reveal');
+    }
+    displayResults();
+});
+
+button3.addEventListener('click', () => {
+    total++;
+    resetSaw();
+
+    const sawLocation = Math.ceil(Math.random() * 3);
+    console.log('sawLocation', sawLocation);
+
+    if (sawLocation === 1) {
+        img1.classList.add('reveal');
+    } else if (sawLocation === 2) {
+        img2.classList.add('reveal');
+    } else {
+        wins++;
         img3.classList.add('reveal');
     }
     displayResults();
