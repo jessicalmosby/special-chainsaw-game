@@ -1,0 +1,52 @@
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/Screen\ Shot\ 2022-11-01\ at\ 1.35.14\ PM.png);
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.hiding-spots {
+    display: flex;
+    gap: 50px;
+}
+
+.hiding-spot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    margin-top: 80px;
+}
+
+.chainsaw {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 475px;
+    z-index: -10;
+}
+
+.stats {
+    margin-top: 50px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+}
+
+.reveal {
+    transform: translateY(-100px);
+}

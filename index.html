@@ -1,39 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <!-- see https://fonts.google.com/ -->
 
-    <!-- fonts -->
-    <!-- see https://fonts.google.com/ -->
+        <!-- css -->
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/global.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <!-- add link for page specific css -->
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/global.css" />
-    <!-- add link for page specific css -->
+    <body>
+        <header>
+            <img class="logo" src="assets/html_css_js.png" alt="logo" />
+            <h1>Zombie Attack</h1>
+        </header>
 
-</head>
-
-<body>
-    <header>
-        <img class="logo" src="assets/html_css_js.png" alt="logo">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <h1>You're being chased by Zombies!</h1>
+            <p>Quick!</p>
+            <p>Can you find where the weapon is hiding?</p>
+            <section class="hiding-spots">
+                <div class="hiding-spot">
+                    <img id="img1" src="/assets/treehouse.png" />
+                    <img id="img4" class="chainsaw" src="/assets/chainsaw.png" />
+                    <button id="button1">Treehouse</button>
+                </div>
+                <div class="hiding-spot">
+                    <img id="img2" src="/assets/shed.png" />
+                    <img id="img4" class="chainsaw" src="/assets/chainsaw.png" />
+                    <button id="button2">Shed</button>
+                </div>
+                <div class="hiding-spot">
+                    <img id="img3" src="/assets/bush.png" />
+                    <img id="img4" class="chainsaw" src="/assets/chainsaw.png" />
+                    <button id="button3">Bush on fire, maybe?</button>
+                </div>
+            </section>
+            <section class="stats">
+                <div class="stat">Zombie kills:<span id="wins"></span></div>
+                <div class="stat">Eaten alive:<span id="losses"></span></div>
+                <div class="stat">Total:<span id="total"></span></div>
+            </section>
+        </main>
+    </body>
 </html>
